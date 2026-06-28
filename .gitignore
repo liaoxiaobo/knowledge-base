@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Obsidian personal state
+.obsidian/workspace.json
+.obsidian/graph.json
+
+# Plugin auto-generated cache
+.smart-env/
