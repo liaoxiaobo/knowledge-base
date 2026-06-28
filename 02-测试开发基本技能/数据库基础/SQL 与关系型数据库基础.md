@@ -1,0 +1,175 @@
+---
+tags:
+  - "#理论"
+  - "#数据库"
+  - "#SQL"
+---
+
+> 来源：`飞书文档/数据库.md`  
+> 整理日期：2026-06-16  > 适用场景：编写涉及数据库操作的测试用例、理解 SQL 执行结果、排查数据一致性问题
+
+---
+
+## 一、关系型数据库核心概念
+
+关系型数据库以**表（Table）**为单位组织数据，表由行（记录）和列（字段）组成。测试开发中最常用的关系型数据库包括 MySQL、PostgreSQL、SQL Server、Oracle。
+
+| 概念 | 说明 | 测试关注点 |
+|---|---|---|
+| 表（Table） | 数据存储的基本单位 | 表结构、字段类型、约束 |
+| 行（Row） | 一条记录 | 用例数据、断言对象 |
+| 列（Column） | 字段 | 字段类型、是否可为空、默认值 |
+| 主键（Primary Key） | 唯一标识一行 | 唯一性、自增策略 |
+| 外键（Foreign Key） | 表间关联 | 关联数据完整性 |
+| 索引（Index） | 加速查询 | 索引覆盖、慢查询优化 |
+
+---
+
+## 二、常用 SQL 语句
+
+### 2.1 查询（DQL）
+
+```sql
+-- 条件查询
+SELECT * FROM users WHERE status = 'active' AND created_at > '2026-01-01';
+
+-- 模糊查询
+SELECT * FROM users WHERE email LIKE '%@example.com';
+
+-- 排序与分页
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 20 OFFSET 40;
+
+-- 聚合查询
+SELECT status, COUNT(*) as cnt FROM orders GROUP BY status;
+
+-- 连接查询
+SELECT u.name, o.order_no 
+FROM users u 
+INNER JOIN orders o ON u.id = o.user_id 
+WHERE o.amount > 100;
+
+-- 子查询
+SELECT * FROM orders WHERE user_id IN (
+    SELECT id FROM users WHERE vip = 1
+);
+```
+
+### 2.2 增删改（DML）
+
+```sql
+INSERT INTO users (name, email) VALUES ('alice', 'alice@example.com');
+
+UPDATE users SET status = 'inactive' WHERE last_login < '2025-01-01';
+
+DELETE FROM users WHERE id = 100;
+```
+
+### 2.3 表结构（DDL）
+
+```sql
+CREATE TABLE test_users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100),
+    status TINYINT DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE test_users ADD COLUMN phone VARCHAR(20);
+
+DROP TABLE IF EXISTS test_users;
+```
+
+---
+
+## 三、索引基础
+
+### 3.1 常见索引类型
+
+| 索引类型 | 特点 | 适用场景 |
+|---|---|---|
+| B+Tree 索引 | 最常用，支持范围查询和排序 | 主键、外键、WHERE 条件字段 |
+| 唯一索引 | 保证列值唯一 | 用户名、邮箱、订单号 |
+| 组合索引 | 多列联合索引 | 常用联合查询条件 |
+| 全文索引 | 用于文本搜索 | 日志、文章搜索 |
+
+### 3.2 索引使用原则
+
+- 高频查询条件字段建索引。
+- 避免对低区分度字段（如性别、状态只有 0/1）单独建索引。
+- 组合索引遵循最左前缀原则。
+- 索引不是越多越好，写操作会变慢。
+
+---
+
+## 四、事务与隔离级别
+
+### 4.1 ACID
+
+| 特性 | 含义 | 测试意义 |
+|---|---|---|
+| 原子性（Atomicity） | 事务要么全成功，要么全回滚 | 异常场景数据一致性 |
+| 一致性（Consistency） | 事务前后数据库状态合法 | 约束、触发器验证 |
+| 隔离性（Isolation） | 并发事务互不干扰 | 并发测试 |
+| 持久性（Durability） | 提交后数据永久保存 | 崩溃恢复测试 |
+
+### 4.2 隔离级别与问题
+
+| 隔离级别 | 脏读 | 不可重复读 | 幻读 | 说明 |
+|---|---|---|---|---|
+| 读未提交（Read Uncommitted） | 可能 | 可能 | 可能 | 很少使用 |
+| 读已提交（Read Committed） | 避免 | 可能 | 可能 | Oracle/SQL Server 默认 |
+| 可重复读（Repeatable Read） | 避免 | 避免 | 可能 | MySQL InnoDB 默认 |
+| 串行化（Serializable） | 避免 | 避免 | 避免 | 性能最低 |
+
+**测试关注点**：
+- 并发转账、库存扣减等场景需验证隔离性。
+- 长事务可能导致锁等待、死锁。
+
+### 4.3 悲观锁与乐观锁
+
+```sql
+-- 悲观锁：SELECT FOR UPDATE
+BEGIN;
+SELECT * FROM inventory WHERE product_id = 1 FOR UPDATE;
+UPDATE inventory SET stock = stock - 1 WHERE product_id = 1;
+COMMIT;
+```
+
+```sql
+-- 乐观锁：版本号控制
+UPDATE inventory SET stock = stock - 1, version = version + 1 
+WHERE product_id = 1 AND version = 5;
+```
+
+---
+
+## 五、数据库备份与恢复
+
+```bash
+# mysqldump 导出
+mysqldump -u root -p --set-gtid-purged=OFF db_name > db_bak.sql
+
+# 导入
+mysql -u root -p db_name < db_bak.sql
+```
+
+**测试应用**：测试前备份基线数据，测试后恢复，保证环境可重复。
+
+---
+
+## 六、实践建议
+
+1. **测试环境使用独立 Schema/库**：避免与开发/生产数据混淆。
+2. **写 SQL 测试时先 EXPLAIN**：确认是否走了预期索引，避免上线后慢查询。
+3. **事务范围尽量小**：减少锁持有时间，降低死锁概率。
+4. **敏感数据脱敏**：测试库尽量使用脱敏后的数据。
+5. **用例清理数据**：每个用例执行后清理自己产生的脏数据，避免互相影响。
+
+---
+
+## 七、关联文档
+
+- [测试数据构造与数据库断言](测试数据构造与数据库断言.md)
+- [Python 测试编程实践](../Python%20测试编程/Python%20测试编程实践.md)
+- [8.4.2 AI 辅助测试数据生成](../../../08-AI与智能化测试/8.4%20AI%20辅助测试数据与用例/8.4.2%20AI%20辅助测试数据生成.md)

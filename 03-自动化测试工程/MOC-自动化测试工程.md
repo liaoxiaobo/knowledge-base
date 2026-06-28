@@ -42,9 +42,9 @@ domain: "03-自动化测试工程"
 
 | 编号 | 主题 | 文档链接 | 标签 | 状态 |
 | ---- | ---- | -------- | ---- | ---- |
-| 3.1.1 | Pytest | [[3.1.1 Pytest]] | `#实战` `#Pytest` | ✅ |
-| 3.1.2 | Robot Framework | [[3.1.2 Robot Framework]] | `#实战` `#RobotFramework` | ✅ |
-| 3.4.1 | Jenkins Pipeline | [[3.4.1 Jenkins Pipeline]] | `#实战` `#Jenkins` `#CI/CD` | ✅ |
+| 3.1.1 | Pytest | [[Pytest]] | `#实战` `#Pytest` | ✅ |
+| 3.1.2 | Robot Framework | [[Robot Framework]] | `#实战` `#RobotFramework` | ✅ |
+| 3.4.1 | Jenkins Pipeline | [[Jenkins Pipeline]] | `#实战` `#Jenkins` `#CI/CD` | ✅ |
 
 ---
 
@@ -64,7 +64,7 @@ domain: "03-自动化测试工程"
 
 ### 如果你要从零开始自动化
 
-1. [[3.1.1 Pytest]] — 先掌握测试框架
+1. [[Pytest]] — 先掌握测试框架
 2. 3.3.1 接口自动化测试实践 — 接口自动化投入产出比最高
 3. 3.2.1 Playwright 实践 — UI 自动化现代方案
 
@@ -76,7 +76,7 @@ domain: "03-自动化测试工程"
 
 ### 如果你要接入 CI/CD
 
-- [[3.4.1 Jenkins Pipeline]]
+- [[Jenkins Pipeline]]
 - 3.4.2 Docker 化测试执行
 - 关联：[[MOC-云计算领域测试]]
 
