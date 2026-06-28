@@ -1,8 +1,8 @@
 ---
 tags:
-  - "#实战"
-  - "#CI/CD"
-  - "#Jenkins"
+  - 实战
+  - Jenkins
+  - CI/CD
 ---
 
 

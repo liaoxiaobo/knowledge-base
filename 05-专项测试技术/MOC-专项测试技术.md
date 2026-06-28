@@ -2,8 +2,6 @@
 title: "MOC-专项测试技术"
 tags:
   - MOC
-  - 专项测试技术
-  - 05-专项测试技术
 created: "2026-06-29"
 updated: "2026-06-29"
 status: 已沉淀

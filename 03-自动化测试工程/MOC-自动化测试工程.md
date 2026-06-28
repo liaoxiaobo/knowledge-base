@@ -2,8 +2,6 @@
 title: "MOC-自动化测试工程"
 tags:
   - MOC
-  - 自动化测试工程
-  - 03-自动化测试工程
 created: "2026-06-29"
 updated: "2026-06-29"
 status: 已沉淀

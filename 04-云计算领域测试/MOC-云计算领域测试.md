@@ -2,8 +2,6 @@
 title: "MOC-云计算领域测试"
 tags:
   - MOC
-  - 云计算领域测试
-  - 04-云计算领域测试
 created: "2026-06-29"
 updated: "2026-06-29"
 status: 已沉淀

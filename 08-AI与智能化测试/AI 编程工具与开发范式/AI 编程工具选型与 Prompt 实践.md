@@ -1,9 +1,8 @@
 ---
 tags:
-  - "#实战"
-  - "#AI"
-  - "#Prompt"
-  - "#AI编程"
+  - 实战
+  - AI
+  - Prompt
 ---
 # AI 编程工具选型与 Prompt 实践
 

@@ -1,10 +1,8 @@
 ---
 tags:
-  - "#实战"
-  - "#云计算"
-  - "#Kubernetes"
-  - "#kubeadm"
-  - "#环境搭建"
+  - 实战
+  - Kubernetes
+  - 环境搭建
 ---
 
 

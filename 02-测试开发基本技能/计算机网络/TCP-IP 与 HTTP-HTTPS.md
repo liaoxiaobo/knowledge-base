@@ -1,9 +1,7 @@
 ---
 tags:
-  - "#理论"
-  - "#网络"
-  - "#HTTP"
-  - "#TCP/IP"
+  - 理论
+  - 网络
 ---
 # TCP/IP 与 HTTP/HTTPS
 

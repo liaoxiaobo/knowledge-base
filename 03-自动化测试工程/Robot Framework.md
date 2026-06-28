@@ -1,8 +1,7 @@
 ---
 tags:
-  - "#实战"
-  - "#自动化框架"
-  - "#RobotFramework"
+  - 实战
+  - RobotFramework
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 tags:
-  - "#实战"
-  - "#Linux"
-  - "#Shell"
+  - 实战
+  - Shell
 ---
 # Shell 脚本编程
 

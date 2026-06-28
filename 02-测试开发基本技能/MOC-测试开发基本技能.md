@@ -2,8 +2,6 @@
 title: "MOC-测试开发基本技能"
 tags:
   - MOC
-  - 测试开发基本技能
-  - 02-测试开发基本技能
 created: "2026-06-29"
 updated: "2026-06-29"
 status: 已沉淀

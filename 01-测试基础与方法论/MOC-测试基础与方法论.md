@@ -2,8 +2,6 @@
 title: "MOC-测试基础与方法论"
 tags:
   - MOC
-  - 测试基础
-  - 01-测试基础与方法论
 created: "2026-06-29"
 updated: "2026-06-29"
 status: 已沉淀

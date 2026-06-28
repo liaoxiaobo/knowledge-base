@@ -2,8 +2,6 @@
 title: "MOC-首页"
 tags:
   - MOC
-  - 首页
-  - 知识库导航
 created: "2026-06-29"
 updated: "2026-06-29"
 status: 已沉淀

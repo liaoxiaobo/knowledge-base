@@ -1,9 +1,8 @@
 ---
 tags:
-  - "#实战"
-  - "#AI"
-  - "#ClaudeCode"
-  - "#AI编程"
+  - 实战
+  - AI
+  - ClaudeCode
 ---
 # Claude Code 核心概念与应用
 

@@ -1,9 +1,8 @@
 ---
 tags:
-  - "#实战"
-  - "#混沌工程"
-  - "#ChaosMesh"
-  - "#Kubernetes"
+  - 实战
+  - ChaosMesh
+  - 混沌工程
 ---
 
 

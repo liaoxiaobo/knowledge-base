@@ -1,12 +1,8 @@
 ---
 tags:
-  - "#实战"
-  - "#云计算"
-  - "#Kubernetes"
-  - "#Prometheus"
-  - "#Grafana"
-  - "#监控"
-  - "#可观测性"
+  - 实战
+  - Kubernetes
+  - 监控
 ---
 
 

@@ -2,8 +2,6 @@
 title: "MOC-AI与智能化测试"
 tags:
   - MOC
-  - AI与智能化测试
-  - 08-AI与智能化测试
 created: "2026-06-29"
 updated: "2026-06-29"
 status: 已沉淀
