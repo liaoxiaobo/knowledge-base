@@ -6,7 +6,8 @@ tags:
   - "#Kubernetes"
 ---
 
-# 5.3.2 Chaos Mesh 实战
+
+# Chaos Mesh 实战
 
 > 摘要：Chaos Mesh 是 PingCap 开源的云原生混沌测试平台，提供在 Kubernetes 平台上进行混沌实验的能力。本文整理 Chaos Mesh 的架构设计、安装部署、核心 CRD、典型故障注入场景以及实战排障经验。
 

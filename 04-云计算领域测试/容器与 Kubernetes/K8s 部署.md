@@ -7,7 +7,8 @@ tags:
   - "#环境搭建"
 ---
 
-# 4.2.1 K8s 部署
+
+# K8s 部署
 
 > 摘要：使用 kubeadm 在 CentOS 7 上部署 Kubernetes v1.16.4 集群（1 Master + 2 Worker），覆盖环境准备、Docker 与 kubelet 安装、控制面初始化、网络插件部署、节点加入及 Dashboard 安装。可作为测试环境搭建和 K8s 部署验证的参考手册。
 

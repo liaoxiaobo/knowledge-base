@@ -5,7 +5,8 @@ tags:
   - "#Jenkins"
 ---
 
-# 3.4.1 Jenkins Pipeline
+
+# Jenkins Pipeline
 
 > 摘要：Jenkins Pipeline 是实现自动化测试持续集成的核心载体。本文整理 Jenkins 在自动化测试场景下的部署、Pipeline 设计、触发策略、报告集成与通知机制，帮助将接口/UI 自动化测试稳定接入 CI/CD 流程。
 

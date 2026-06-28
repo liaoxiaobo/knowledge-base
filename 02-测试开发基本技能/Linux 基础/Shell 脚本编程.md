@@ -4,6 +4,7 @@ tags:
   - "#Linux"
   - "#Shell"
 ---
+# Shell 脚本编程
 
 > 来源：`source/_posts/linux-shell.md`  
 > 整理日期：2026-06-16  > 适用场景：编写测试环境初始化脚本、批量执行用例、测试结果收集、CI/CD 前置/后置任务
@@ -297,7 +298,7 @@ find /tmp/test_data/ -type d -empty -delete
 
 ## 九、关联文档
 
-- [Linux 核心概念](Linux%20核心概念.md)
-- [Linux 常用命令速查](Linux%20常用命令速查.md)
-- [3.4 CI/CD 集成](../../03-自动化测试工程/)
-- [4.7 测试环境管理](../../04-云计算领域测试/)
+- [[Linux 核心概念]]
+- [[Linux 常用命令速查]]
+- 3.4 CI/CD 集成
+- 4.7 测试环境管理

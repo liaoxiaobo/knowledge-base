@@ -4,6 +4,7 @@ tags:
   - "#Python"
   - "#代码质量"
 ---
+# Python 代码质量与规范
 
 > 整理日期：2026-06-16  
 > 适用场景：团队内统一测试代码风格、提升测试脚本可维护性、Code Review 参考
@@ -176,6 +177,6 @@ def retry_with_backoff(func, max_attempts=3, base_delay=1):
 
 ## 九、关联文档
 
-- [Python 语言核心](Python%20语言核心.md)
-- [Python 测试编程实践](Python%20测试编程实践.md)
-- [Pytest](../../03-自动化测试工程/Pytest.md)
+- [[Python 语言核心]]
+- [[Python 测试编程实践]]
+- [[Pytest]]

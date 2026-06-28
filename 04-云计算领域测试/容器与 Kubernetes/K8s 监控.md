@@ -9,7 +9,8 @@ tags:
   - "#可观测性"
 ---
 
-# 4.2.2 K8s 监控
+
+# K8s 监控
 
 > 摘要：在 Kubernetes v1.8.6 集群上部署 Prometheus + Grafana + node-exporter + kube-state-metrics 监控体系，覆盖基础设施层、K8s 集群层、应用资源对象层和中间件层的指标采集与展示。可作为云原生可观测性测试环境搭建的参考。
 

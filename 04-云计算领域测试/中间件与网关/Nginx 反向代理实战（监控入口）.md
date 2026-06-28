@@ -10,7 +10,8 @@ tags:
   - "#Grafana"
 ---
 
-# 4.7.2 Nginx 反向代理实战（监控入口）
+
+# Nginx 反向代理实战（监控入口）
 
 > 摘要：通过 Nginx 反向代理 + 负载均衡，为 Prometheus、Grafana、Alertmanager 等监控组件提供统一的 Web 访问入口。解决测试环境中需要记忆多个节点 IP 和 NodePort 的问题，提升测试人员访问监控系统的便利性。
 

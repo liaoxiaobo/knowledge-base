@@ -4,6 +4,7 @@ tags:
   - "#Linux"
   - "#操作系统"
 ---
+# Linux 核心概念
 
 > 来源：`source/_posts/linux-basic.md`  
 > 整理日期：2026-06-16  
@@ -191,7 +192,7 @@ kill -HUP PID           # 重载配置
 
 ## 八、关联文档
 
-- [Linux 常用命令速查](Linux%20常用命令速查.md)
-- [Shell 脚本编程](Shell%20脚本编程.md)
-- [TCP/IP 与 HTTP/HTTPS](../计算机网络/TCP-IP%20与%20HTTP-HTTPS.md)
-- [容器与 Kubernetes](../../04-云计算领域测试/)
+- [[Linux 常用命令速查]]
+- [[Shell 脚本编程]]
+- [[TCP-IP 与 HTTP-HTTPS|TCP/IP 与 HTTP/HTTPS]]
+- 容器与 Kubernetes

@@ -5,7 +5,8 @@ tags:
   - "#RobotFramework"
 ---
 
-# 3.1.2 Robot Framework
+
+# Robot Framework
 
 > 摘要：Robot Framework 是基于关键字驱动的自动化测试框架，适合业务测试人员与开发协同编写验收测试。本文从测试开发视角整理其核心概念、分层设计方法，以及配置管理、测试库封装、CI/CD 集成等项目级实践经验。
 

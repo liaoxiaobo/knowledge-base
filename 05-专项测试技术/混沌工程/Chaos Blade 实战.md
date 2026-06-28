@@ -5,7 +5,8 @@ tags:
   - "#ChaosBlade"
 ---
 
-# 5.3.3 Chaos Blade 实战
+
+# Chaos Blade 实战
 
 > 摘要：Chaos Blade 是阿里巴巴开源的混沌工程工具，建立在近十年故障测试和演练实践基础上。本文整理 Chaos Blade 的部署方式、混沌实验模型、典型场景以及常用命令，帮助在主机、容器和 Kubernetes 环境中进行故障注入。
 

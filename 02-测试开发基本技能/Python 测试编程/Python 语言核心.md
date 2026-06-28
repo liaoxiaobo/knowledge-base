@@ -4,6 +4,7 @@ tags:
   - "#Python"
   - "#编程基础"
 ---
+# Python 语言核心
 
 > 来源：`source/_posts/python-interview.md`、`source/_posts/python-decorator.md`  
 > 整理日期：2026-06-16  
@@ -179,6 +180,6 @@ Python 以引用计数为主，分代回收为辅。测试开发中需关注：
 
 ## 九、关联文档
 
-- [Python 测试编程实践](Python%20测试编程实践.md)
-- [Python 代码质量与规范](Python%20代码质量与规范.md)
-- [Pytest](../../03-自动化测试工程/Pytest.md)（框架级 fixture、参数化等）
+- [[Python 测试编程实践]]
+- [[Python 代码质量与规范]]
+- [[Pytest]]（框架级 fixture、参数化等）

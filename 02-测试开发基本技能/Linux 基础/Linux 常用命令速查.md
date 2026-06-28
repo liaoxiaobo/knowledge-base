@@ -4,6 +4,7 @@ tags:
   - "#Linux"
   - "#命令行"
 ---
+# Linux 常用命令速查
 
 > 来源：`source/_posts/linux_cmd.md`  
 > 整理日期：2026-06-16  
@@ -188,7 +189,7 @@ dd if=/dev/zero of=test_100m.bin bs=1M count=100
 
 ## 八、关联文档
 
-- [Linux 核心概念](Linux%20核心概念.md)
-- [Shell 脚本编程](Shell%20脚本编程.md)
-- [TCP/IP 与 HTTP/HTTPS](../计算机网络/TCP-IP%20与%20HTTP-HTTPS.md)
-- [性能测试](../../05-专项测试技术/)
+- [[Linux 核心概念]]
+- [[Shell 脚本编程]]
+- [[TCP-IP 与 HTTP-HTTPS|TCP/IP 与 HTTP/HTTPS]]
+- 性能测试

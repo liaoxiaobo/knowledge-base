@@ -4,6 +4,7 @@ tags:
   - "#Python"
   - "#测试编程"
 ---
+# Python 测试编程实践
 
 > 来源：基于 `source/_posts/python-interview.md`、`source/_posts/python-decorator.md` 及测试开发实践整理  
 > 整理日期：2026-06-16  
@@ -294,6 +295,6 @@ def login(username, password):
 
 ## 九、关联文档
 
-- [Python 语言核心](Python%20语言核心.md)
-- [Python 代码质量与规范](Python%20代码质量与规范.md)
-- [Pytest](../../03-自动化测试工程/Pytest.md)
+- [[Python 语言核心]]
+- [[Python 代码质量与规范]]
+- [[Pytest]]
