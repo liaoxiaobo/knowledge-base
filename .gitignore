@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# IDE
+.idea/
+
 # Obsidian personal state
 .obsidian/workspace.json
 .obsidian/graph.json
