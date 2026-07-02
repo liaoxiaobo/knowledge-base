@@ -141,8 +141,8 @@ claude project purge ~/work/my-repo --dry-run
 
 ## 相关链接
 
-- [[Claude Code 核心概念与应用]]
-- [[Claude Code 在测试开发中的应用]]（待补充）
+- [[ClaudeCode核心概念与应用]]
+- [[ClaudeCode测试开发实战]]（待补充）
 
 ---
 
