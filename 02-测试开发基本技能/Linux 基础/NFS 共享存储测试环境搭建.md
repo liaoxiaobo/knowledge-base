@@ -1,8 +1,13 @@
 ---
+title: "NFS 共享存储测试环境搭建"
 tags:
   - 实战
   - NFS
   - 环境搭建
+  - Linux
+created: "2026-06-29"
+updated: "2026-07-05"
+domain: "02-测试开发基本技能"
 ---
 
 
@@ -11,8 +16,6 @@ tags:
 > 摘要：在 CentOS 环境下搭建 NFS（Network File System）共享存储服务，实现多台测试节点之间的文件共享。适用于测试数据共享、测试产物归档、分布式测试节点统一挂载等场景。
 
 **适用场景**：多节点测试环境需要共享测试数据、测试脚本或测试结果；为分布式测试、日志集中收集、测试报告统一访问提供存储底座。
-
-**关键词**：NFS、RPC、rpcbind、/etc/exports、共享目录、挂载、all_squash、root_squash。
 
 ---
 
@@ -47,7 +50,7 @@ rpm -qa | grep nfs          # 检查是否已安装
 yum install nfs-utils -y    # 服务端和客户端都要安装
 ```
 
-![检查 NFS 安装](../../assets/04-云计算领域测试/4.6.1-nfs-01.png)
+![检查 NFS 安装](../../assets/2.2.4-nfs-01.png)
 
 ---
 
