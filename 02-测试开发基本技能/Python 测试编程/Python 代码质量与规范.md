@@ -171,11 +171,3 @@ def retry_with_backoff(func, max_attempts=3, base_delay=1):
 3. **常量集中管理**：URL、状态码、错误提示等放到 `constants.py`。
 4. **定期重构测试代码**：删除废弃用例、合并重复逻辑、更新过时的断言。
 5. **把测试意图写进名字**：好的测试函数名应该能替代部分注释。
-
----
-
-## 九、关联文档
-
-- [[Python 语言核心]]
-- [[Python 测试编程实践]]
-- [[Pytest]]

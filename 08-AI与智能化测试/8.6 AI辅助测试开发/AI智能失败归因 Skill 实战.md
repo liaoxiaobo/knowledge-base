@@ -1,17 +1,13 @@
 ---
-title: "AI智能失败归因 Skill 实战"
+title: AI智能失败归因 Skill 实战
 tags:
-  - 项目
   - AI测试
   - 失败归因
-  - Playwright
-  - Pytest
-  - Allure
   - Skill
-created: "2026-07-05"
-updated: "2026-07-05"
-domain: "08-AI与智能化测试"
-project: "sugoncloud/playwright-sugon"
+created: 2026-07-05
+updated: 2026-07-05
+domain: 08-AI与智能化测试
+project: sugoncloud/playwright-sugon
 ---
 
 # AI智能失败归因 Skill 实战
