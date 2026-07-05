@@ -126,13 +126,13 @@ ps -aux --sort=-%mem | head -n 11
 
 ## 五、系统与服务
 
-| 命令 | 示例 | 测试场景 |
-|---|---|---|
-| `systemctl` | `systemctl status nginx` | 查看服务状态 |
-| `journalctl` | `journalctl -u nginx -f` | 查看服务日志 |
-| `crontab` | `crontab -l` | 查看定时任务 |
-| `nohup` | `nohup pytest > run.log 2>&1 &` | 后台执行测试 |
-| `watch` | `watch -n 5 'df -h'` | 周期性监控 |
+| 命令           | 示例                              | 测试场景   |
+| ------------ | ------------------------------- | ------ |
+| `systemctl`  | `systemctl status nginx`        | 查看服务状态 |
+| `journalctl` | `journalctl -u nginx -f`        | 查看服务日志 |
+| `crontab`    | `crontab -l`                    | 查看定时任务 |
+| `nohup`      | `nohup pytest > run.log 2>&1 &` | 后台执行测试 |
+| `watch`      | `watch -n 5 'df -h'`            | 周期性监控  |
 
 ```bash
 # 后台执行测试套件，忽略挂起信号
@@ -168,13 +168,3 @@ for f in test_*.log; do mv "$f" "bak_$f"; done
 ```bash
 dd if=/dev/zero of=test_100m.bin bs=1M count=100
 ```
-
----
-
-## 七、实践建议
-
-1. **日志分析优先用 `grep + awk + sed`**：80% 的排查场景不需要写脚本。
-2. **大文件避免 `cat`**：用 `less`、`grep`、`awk` 流式处理。
-3. **批量操作先 `echo` 验证**：避免误删/误改，如 `find ... | xargs echo rm`。
-4. **后台任务记录 PID**：方便测试结束后清理。
-5. **性能数据保留时间戳**：便于与测试执行时间关联。
