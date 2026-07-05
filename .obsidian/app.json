@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "assets",
-  "templates-folder": "_templates"
+  "templates-folder": "_templates",
+  "alwaysUpdateLinks": true
 }

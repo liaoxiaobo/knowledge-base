@@ -193,5 +193,5 @@ kill -HUP PID           # 重载配置
 
 - [[Linux 常用命令速查]]
 - [[Shell 脚本编程]]
-- [[TCP-IP 与 HTTP-HTTPS|TCP/IP 与 HTTP/HTTPS]]
+- [[网络基础知识|TCP/IP 与 HTTP/HTTPS]]
 - 容器与 Kubernetes

@@ -190,5 +190,5 @@ dd if=/dev/zero of=test_100m.bin bs=1M count=100
 
 - [[Linux 核心概念]]
 - [[Shell 脚本编程]]
-- [[TCP-IP 与 HTTP-HTTPS|TCP/IP 与 HTTP/HTTPS]]
+- [[网络基础知识|TCP/IP 与 HTTP/HTTPS]]
 - 性能测试
